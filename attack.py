@@ -30,7 +30,7 @@ class attack_model:
             ismask: LIME/CAM or None
 
         Returns:
-            data_result: csv文件格式, head = "init", "adv", "noise"
+            data_result: csv file format, head = "init", "adv", "noise"
             x_adv_list: Matrix after adding disturbance
         """
         LP = load_and_predict(self.net, self.model, self.image_size)
@@ -76,7 +76,7 @@ class attack_model:
             ismask: LIME/CAM or None
 
         Returns:
-            data_result: csv文件格式, head = "init", "adv", "noise"
+            data_result: csv file format, head = "init", "adv", "noise"
             x_adv_list: Matrix after adding disturbance
         """
         LP = load_and_predict(self.net, self.model, self.image_size)
